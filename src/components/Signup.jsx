@@ -18,9 +18,11 @@ const Signup = () => {
       );
       message.success("Signup Successful! Please login.");
       setSignupSucces(true);
+      console.log(response)
       setLoading(false);
     } catch (error) {
       console.error("Signup Error: ", error);
+     
    
       setLoading(false);
     }
